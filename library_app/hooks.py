@@ -1,4 +1,6 @@
+from __future__ import unicode_literals
 from . import __version__ as app_version
+
 
 app_name = "library_app"
 app_title = "Library App"
@@ -8,6 +10,31 @@ app_icon = "octicon octicon-file-directory"
 app_color = "Blue"
 app_email = "m.shahaaz@leadergroup.com"
 app_license = "MIT"
+
+# include js, css files in header of desk.html
+app_include_css = [
+    "/assets/bdtheme/css/bdtheme.css",
+    "/assets/bdtheme/css/skin-blue.css",
+    "/assets/bdtheme/css/custom.css",
+    "/assets/bdtheme/css/temp.css",
+]
+app_include_js = [
+    "/assets/bdtheme/js/bdtheme.js",
+    "/assets/bdtheme/js/custom.js",
+    "/assets/js/bdtheme-template.min.js",
+]
+
+# include js, css files in header of web template
+web_include_css = "/assets/bdtheme/css/bdtheme-web.css"
+# web_include_js = "/assets/bdtheme/js/bdtheme.js"
+
+
+
+
+
+
+
+
 
 # Includes in <head>
 # ------------------
@@ -89,13 +116,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Transactions": {
+		"validate": "library_app.api.check_debt"
+	}
+ }
 
 # Scheduled Tasks
 # ---------------

@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "autoname": "format:{title} by {author}",
+ "creation": "2021-09-25 22:56:02.904109",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "isbn",
+  "author",
+  "edition",
+  "number_of_pages",
+  "number_of_copies",
+  "publisher",
+  "language",
+  "rating",
+  "status",
+  "book_stock"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "edition",
+   "fieldtype": "Select",
+   "label": "Edition",
+   "options": "Edition 1\nEdition 2\nEdition 3"
+  },
+  {
+   "fieldname": "number_of_pages",
+   "fieldtype": "Int",
+   "label": "Number of Pages"
+  },
+  {
+   "fieldname": "number_of_copies",
+   "fieldtype": "Int",
+   "label": "Number of Copies Available"
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Data",
+   "label": "Publisher"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Link",
+   "label": "Language",
+   "options": "Language"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "book_stock",
+   "fieldtype": "Int",
+   "label": "Total Copies"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-28 23:19:42.269940",
+ "modified_by": "Administrator",
+ "module": "Library App",
+ "name": "Books",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

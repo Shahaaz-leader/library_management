@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "autoname": "TRANS-.####",
+ "creation": "2021-09-25 23:08:13.291657",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "to_date",
+  "number_of_days",
+  "book_name",
+  "member_id",
+  "rent_fee",
+  "status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "number_of_days",
+   "fieldtype": "Int",
+   "label": "Number of Days"
+  },
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Link",
+   "label": "Book Name",
+   "options": "Books"
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member ID",
+   "options": "Members"
+  },
+  {
+   "fieldname": "rent_fee",
+   "fieldtype": "Currency",
+   "label": "Rent Fee"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Transactions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-09-26 12:42:43.734903",
+ "modified_by": "Administrator",
+ "module": "Library App",
+ "name": "Transactions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

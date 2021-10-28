@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "autoname": "format:{full_name}-{####}",
+ "creation": "2021-09-25 23:04:17.827378",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "full_name",
+  "email",
+  "phone_number",
+  "address",
+  "book_return_rating",
+  "outstanding_debt"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "book_return_rating",
+   "fieldtype": "Currency",
+   "label": "Book Return Rating"
+  },
+  {
+   "fieldname": "outstanding_debt",
+   "fieldtype": "Currency",
+   "label": "Outstanding Debt"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-26 12:00:48.347908",
+ "modified_by": "Administrator",
+ "module": "Library App",
+ "name": "Members",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
